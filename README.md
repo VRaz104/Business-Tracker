@@ -1,59 +1,70 @@
 # Business-Tracker
+
 Local Business Finder (OpenStreetMap)
+
 A Python script that finds real-world local businesses in any city using OpenStreetMap data and exports the results to structured JSON.
 
-What Problem This Solves
-Finding reliable, structured data about local businesses is harder than it should be.
-Most sources are either:
-  -Paid APIs (Google Places, Yelp)
-  -Rate-limited
-  -Locked behind accounts
-  -Not easily exportable
-This script solves that by:
-  -Using OpenStreetMap (OSM), a free and open global dataset
-  -Converting a city name into coordinates
-  -Searching for nearby businesses by type
-  -Exporting clean, reusable JSON data
-  -Logging every step for transparency and debugging
-No API keys. No accounts. No scraping.
+---
 
-Who This Is For
+## What Problem This Solves
+
+Finding reliable, structured data about local businesses is harder than it should be.
+
+Most sources are either:
+- Paid APIs (Google Places, Yelp)
+- Rate-limited
+- Locked behind accounts
+- Not easily exportable
+
+This script solves that by:
+- Using OpenStreetMap (OSM), a free and open global dataset
+- Converting a city name into coordinates
+- Searching for nearby businesses by type
+- Exporting clean, reusable JSON data
+- Logging every step for transparency and debugging
+
+No API keys.  
+No accounts.  
+No scraping.
+
+---
+
+## Who This Is For
+
 This tool is useful for:
 
-  -Python beginners learning real-world scripting
+- Python beginners learning real-world scripting
+- Developers building datasets for:
+  - Market research
+  - Local business analysis
+  - Data science projects
+- Indie hackers and automation builders
+- Anyone who wants free, structured business data
 
-  -Developers building datasets for:
-  -> Market research
-  -> Local business analysis
-  -> Data science projects
-  -Indie hackers and automation builders
-  -Anyone who wants free, structured business data
-If you are learning Python and APIs, this script shows:
-  -API usage
-  -Error handling
-  -Retries
-  -Logging
-  -JSON output
-  -Clean program structure
+---
 
-How It Works (High Level)
+## How It Works (High Level)
+
 1. User enters a city name
 2. City is converted into latitude/longitude using OpenStreetMap (Nominatim)
 3. Businesses are searched within a 10 km radius using Overpass API
 4. Results are filtered, normalized, and saved to JSON
 5. A detailed log file is generated
 
-#INSTALLATION
-Requirements
-  -Python 3.8+
-  -Internet connection
+---
 
-Install Dependencies
+## Installation
+
+### Requirements
+
+- Python 3.8+
+- Internet connection
+
+### Install Dependencies
+
+```bash
 pip install requests
 
-Clone the Repository
-git clone https://github.com/VRaz104/local-business-finder.git
-cd local-business-finder
 
 Now to run the Script you just need to type the following commands in the terminal after downloading the script:
 ```bash
