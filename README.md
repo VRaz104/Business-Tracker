@@ -62,22 +62,18 @@ This tool is useful for:
 
 ### Install Dependencies
 
-```bash
-pip install requests
-
-
 Now to run the Script you just need to type the following commands in the terminal after downloading the script:
 ```bash
 pip install requests
 ```
 
 ```bash
-git clone https://github.com/yourusername/local-business-finder.git
-cd local-business-finder
+git clone https://github.com/Vraz104/Business-Tracker.git
+cd Business-Tracker
 ```
 
 ```bash
-python business_finder.py
+python Business_tracker.py
 ```
 
 #EXAMPLE
