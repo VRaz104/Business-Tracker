@@ -52,7 +52,7 @@ Install Dependencies
 pip install requests
 
 Clone the Repository
-git clone https://github.com/yourusername/local-business-finder.git
+git clone https://github.com/VRaz104/local-business-finder.git
 cd local-business-finder
 
 Now to run the Script you just need to type the following commands in the terminal after downloading the script:
